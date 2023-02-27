@@ -1,23 +1,53 @@
 "use strict";
+var __defProp = Object.defineProperty;
+var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
+var __getOwnPropNames = Object.getOwnPropertyNames;
+var __hasOwnProp = Object.prototype.hasOwnProperty;
+var __export = (target, all) => {
+  for (var name in all)
+    __defProp(target, name, { get: all[name], enumerable: true });
+};
+var __copyProps = (to, from, except, desc) => {
+  if (from && typeof from === "object" || typeof from === "function") {
+    for (let key of __getOwnPropNames(from))
+      if (!__hasOwnProp.call(to, key) && key !== except)
+        __defProp(to, key, { get: () => from[key], enumerable: !(desc = __getOwnPropDesc(from, key)) || desc.enumerable });
+  }
+  return to;
+};
+var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: true }), mod);
+
+// src/index.tsx
+var src_exports = {};
+__export(src_exports, {
+  App: () => App
+});
+module.exports = __toCommonJS(src_exports);
 
 // ../tokens/dist/index.mjs
-var space = {
-  1: "0.25rem",
-  2: "0.5rem",
-  3: "0.75rem",
-  4: "1rem",
-  5: "1.25rem",
-  6: "1.5rem",
-  7: "1.75rem",
-  8: "2rem",
-  10: "2.5rem",
-  12: "3rem",
-  16: "4rem",
-  20: "5rem",
-  40: "10rem",
-  64: "16rem",
-  80: "20rem"
+var colors = {
+  white: "#FFF",
+  black: "#000",
+  gray100: "#E1E1E6",
+  gray200: "#A9A9B2",
+  gray400: "#7C7C8A",
+  gray500: "#505059",
+  gray600: "#323238",
+  gray700: "#29292E",
+  gray800: "#202024",
+  gray900: "#121214",
+  iToddy300: "#ffff77",
+  iToddy500: "#f8e44b",
+  iToddy700: "#eeca06",
+  iToddy900: "#d2b202"
 };
 
-// src/index.ts
-console.log(space);
+// src/index.tsx
+var import_jsx_runtime = require("react/jsx-runtime");
+function App() {
+  return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h1", { style: { color: colors.iToddy500 }, children: "Hello World" });
+}
+// Annotate the CommonJS export names for ESM import in node:
+0 && (module.exports = {
+  App
+});
