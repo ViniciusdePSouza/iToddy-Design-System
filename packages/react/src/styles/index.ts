@@ -8,7 +8,7 @@ import {
   space,
 } from "@itoddy-ui/tokens/dist";
 
-import { createStitches, defaultThemeMap } from "@stitches/react";
+import { createStitches, defaultThemeMap } from "@stitches/react"
 
 export const {
   styled,
