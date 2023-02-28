@@ -175,30 +175,15 @@ var {
   }
 });
 
-// src/index.tsx
-var Button = styled("button", {
-  fontFamily: "$default",
-  backgroundColor: "$iToddy700",
+// src/components/Box.tsx
+var Box = styled("div", {
+  padding: "$4",
   borderRadius: "$md",
-  border: 0,
-  fontWeight: "bold",
-  color: "$black",
-  variants: {
-    size: {
-      small: {
-        fontSize: 14,
-        padding: "$2 $4"
-      },
-      big: {
-        fontSize: 16,
-        padding: "$3 $6"
-      }
-    }
-  },
-  defaultVariants: {
-    size: "small"
-  }
+  backgroundColor: "$gray800",
+  border: "1px solid $gray600",
+  color: "$white"
 });
+Box.displayName = "Box";
 export {
-  Button
+  Box
 };
