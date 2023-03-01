@@ -361,6 +361,7 @@ var Button = styled("button", {
     size: "md"
   }
 });
+Button.displayName = "Button";
 
 // src/components/TextInput/styled.ts
 var TextInputContainer = styled("div", {
@@ -546,6 +547,7 @@ function Multistep({ size, currentStep = 1 }) {
     }) })
   ] });
 }
+Multistep.displayName = "Multistep";
 export {
   Avatar2 as Avatar,
   Box,

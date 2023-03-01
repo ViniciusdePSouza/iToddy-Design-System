@@ -382,6 +382,7 @@ var Button = styled("button", {
     size: "md"
   }
 });
+Button.displayName = "Button";
 
 // src/components/TextInput/styled.ts
 var TextInputContainer = styled("div", {
@@ -567,6 +568,7 @@ function Multistep({ size, currentStep = 1 }) {
     }) })
   ] });
 }
+Multistep.displayName = "Multistep";
 // Annotate the CommonJS export names for ESM import in node:
 0 && (module.exports = {
   Avatar,
