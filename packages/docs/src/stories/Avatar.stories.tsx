@@ -10,6 +10,14 @@ export default {
   args:{
     src: 'https://github.com/ViniciusdePSouza.png',
     alt: 'Vinícius Souza'
+  },
+
+  argTypes: {
+    src: {
+      control: {
+        type: 'text' 
+      }
+    }
   }
 } as Meta<AvatarProps>;
 

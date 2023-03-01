@@ -7,12 +7,18 @@ export default {
   component: Box,
 
   args:{
-    
     children:  (
         <>
           <span>Testing Box Element</span>
         </>
       ),
+  },
+  argTypes: {
+    children: {
+      control: {
+        type: null 
+      }
+    }
   }
 } as Meta<BoxProps>;
 
