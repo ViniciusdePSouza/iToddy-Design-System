@@ -12,7 +12,7 @@ export const TextInput = forwardRef<ElementRef<typeof Input>, TextInputProps>(
         <Input ref={ref} {...props} />
       </TextInputContainer>
     )
-  }
+  },
 )
 
 TextInput.displayName = "TextInput";
