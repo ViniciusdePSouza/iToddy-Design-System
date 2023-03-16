@@ -1,5 +1,11 @@
 # @itoddy-ui/react
 
+## 4.0.0
+
+### Major Changes
+
+- Addtion of prefix to TextInput component
+
 ## 3.1.1
 
 ### Patch Changes
