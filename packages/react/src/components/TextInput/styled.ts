@@ -1,59 +1,63 @@
 import { styled } from "../../styles";
 
-export const TextInputContainer = styled('div', {
-    backgroundColor: '$gray900',
-    borderRadius: '$sm',
-    boxSizing: 'border-box',
-    border: '2px solid $gray900',
-    display: 'flex',
-    alignItems: 'center',
+export const TextInputContainer = styled("div", {
+  backgroundColor: "$gray900",
+  borderRadius: "$sm",
+  boxSizing: "border-box",
+  border: "2px solid $gray900",
+  display: "flex",
+  alignItems: "center",
 
-    variants: {
-        size: {
-            sm: {
-                padding: '$2 $3',
-            },
-            md: {
-                padding: '$3 $4',
-            }
-        }
+  variants: {
+    size: {
+      sm: {
+        padding: "$2 $3",
+      },
+      md: {
+        padding: "$3 $4",
+      },
     },
+  },
 
-    '&:has(input:focus)': {
-        borderColor: "$iToddy500",
-    },
+  "&:has(input:focus)": {
+    borderColor: "$iToddy500",
+  },
 
-    '&:has(input:disabled)': {
-        opacity: 0.51,
-        cursor: 'not-allowed'
-    }
-})
+  "&:has(input:disabled)": {
+    opacity: 0.51,
+    cursor: "not-allowed",
+  },
 
-export const Prefix = styled('span', {
-    fontFamily: '$default',
-    fontSize: '$sm',
-    color: '$gray400',
-    fontWeight: 'regular'
-})
+  defaultVariants: {
+    size: "md",
+  },
+});
 
-export const Input = styled('input', {
-    fontFamily: '$default',
-    fontSize: '$sm',
-    color: '$white',
-    fontWeight: 'regular',
-    background: 'transparent',
-    border: 0,
-    width: '100%',
+export const Prefix = styled("span", {
+  fontFamily: "$default",
+  fontSize: "$sm",
+  color: "$gray400",
+  fontWeight: "regular",
+});
 
-    '&:focus': {
-        outline: 0
-    },
+export const Input = styled("input", {
+  fontFamily: "$default",
+  fontSize: "$sm",
+  color: "$white",
+  fontWeight: "regular",
+  background: "transparent",
+  border: 0,
+  width: "100%",
 
-    '&:disabled': {
-        cursor: 'not-allowed'
-    },
+  "&:focus": {
+    outline: 0,
+  },
 
-    '&::placeholder': {
-        color: '$gray400'
-    }
-})
+  "&:disabled": {
+    cursor: "not-allowed",
+  },
+
+  "&::placeholder": {
+    color: "$gray400",
+  },
+});

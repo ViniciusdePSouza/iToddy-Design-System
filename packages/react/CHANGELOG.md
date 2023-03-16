@@ -1,5 +1,11 @@
 # @itoddy-ui/react
 
+## 4.1.0
+
+### Minor Changes
+
+- styles: changes on defaultvariants for textinput
+
 ## 4.0.0
 
 ### Major Changes
